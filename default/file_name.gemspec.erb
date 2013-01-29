@@ -12,12 +12,11 @@ Gem::Specification.new do |s|
   s.summary     = %q{TODO: add a short summary of the gem}
   s.description = %q{TODO: also add a slightly longer description of the gem}
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.rdoc", "CHANGELOG.md"]
+  s.test_files = Dir["test/**/*"]
+  s.license = "MIT"
 
-  s.add_development_dependency 'bundler'
-  s.add_development_dependency 'minitest'
-  s.add_development_dependency 'rcov'
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "minitest"
+  s.add_development_dependency "simplecov"
 end
