@@ -29,11 +29,11 @@ Assumptions / Preferences
 
 * Ruby 1.9.X Support only
 * Usage of MiniTest::Spec and Simplecov
-* Release process of:
-    # Writing release notes in CHANGELOG.md
-    # Bump version by editing the constant in lib/foo_gem/version.rb
-    # Creating a git tag of vMAJOR.MINOR.PATCH (SemVer)
-    # build and push the gem to rubygems.org
-    # (`rake release`) will perform the previous two steps for you
+* Release process of:    
+  1. Writing release notes in CHANGELOG.md
+  2. Bump version by editing the constant in lib/foo_gem/version.rb
+  3. Creating a git tag of vMAJOR.MINOR.PATCH (SemVer)
+  4. build and push the gem to rubygems.org
+  5. (`rake release`) will perform the previous two steps for you
 
 Look for `TODO:`'s in the Source after generating your gems to see configuration and documentation that needs filling in
