@@ -13,10 +13,11 @@ Gem::Specification.new do |s|
   s.description = %q{TODO: also add a slightly longer description of the gem}
 
   s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.rdoc", "CHANGELOG.md"]
-  s.test_files = Dir["test/**/*"]
+  s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.add_development_dependency "bundler"
+  s.add_development_dependency "bundler", ">= 1.2.0"
+  s.add_development_dependency "rake", ">= 10.0.0"
   s.add_development_dependency "minitest"
   s.add_development_dependency "simplecov"
 end

@@ -1,3 +1,11 @@
 require '<%= file_name %>/version'
 
-# TODO: Add additional requires for extra files you write in lib/<%= file_name %>/ here
+# require 'lib/<%= file_name %>/foo' TODO: Add additional requires for new files here
+
+module <%= klass %>
+  # Welcome to your new gem!
+  # This file is the entry point for your gem. Logic can go in this file, though most gems are big enough to warrant splitting
+  # functionality out into multiple files namespaced under a module named the same as a gem.
+  # Create those files as lib/<%= file_name %>/foo as <%= klass %>::Foo remembering to require each file at the top of this file,
+  # unless you want your users to manually require a specific file (for example opt-in feature in a distinct file)
+end
