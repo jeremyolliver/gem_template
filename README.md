@@ -2,6 +2,9 @@ Gem Template
 ============
 
 This is a template for a skeleton ruby gem for use with [hoe](http://github.com/seattlerb/hoe)
+The setup here are my own preferences, inspired and borrowed from the generators/templates from hoe, bundler and rails.
+
+Caveats: This doesn't seem to work for gem names with dashes, underscores with lowercase is the ruby convention.
 
 Usage
 -----
@@ -22,6 +25,16 @@ Install development dependencies:
 
     gem install bundler
     bundle install
+    
+Writing Rails Engines (controllers or assets)
+---------------------------------------------
+
+Note: If you are writing a gem for use with rails, and intend to have either mountable controllers, or assets bundled via asset pipe. Then I highly suggest generating your gem/project with rails generators.
+
+    gem update rails
+    rails plugin new <name> --mountable
+
+Read more at http://guides.rubyonrails.org/engines.html
 
 
 Assumptions / Preferences
