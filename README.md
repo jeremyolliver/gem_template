@@ -2,7 +2,7 @@ Gem Template
 ============
 
 This is a template for a skeleton ruby gem for use with [hoe](http://github.com/seattlerb/hoe)
-The setup here are my own preferences, inspired and borrowed from the generators/templates from hoe, bundler and rails.
+The configuration here are my own preferences, inspired and borrowed from the generators/templates from hoe, bundler and rails.
 
 Caveats: This doesn't seem to work for gem names with dashes, underscores with lowercase is the ruby convention.
 
@@ -23,8 +23,11 @@ create new gem via hoe with:
 
 Install development dependencies:
 
+    cd my_new_gem
     gem install bundler
     bundle install
+
+Look for `TODO:`'s in the Source after generating your gems to see configuration and documentation that needs filling in
     
 Writing Rails Engines (controllers or assets)
 ---------------------------------------------
@@ -40,7 +43,7 @@ Read more at http://guides.rubyonrails.org/engines.html
 Assumptions / Preferences
 -------------------------
 
-* Ruby 1.9.X Support only
+* Ruby 1.9.3+ Support only
 * Usage of MiniTest::Spec and Simplecov
 * Release process of:    
   1. Writing release notes in CHANGELOG.md
@@ -49,4 +52,3 @@ Assumptions / Preferences
   4. build and push the gem to rubygems.org
   5. (`rake release`) will perform the previous two steps for you
 
-Look for `TODO:`'s in the Source after generating your gems to see configuration and documentation that needs filling in
